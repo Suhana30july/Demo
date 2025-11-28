@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(135deg, #0a0f24, #14213d, #1f6f8b);
+  /* background: linear-gradient(135deg, #f0851a, #614dc2, #53cd37); */
+  /* background: #0f121a; */
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+img:hover {
+  filter: drop-shadow(0px 0px 12px #27e4ff);
+}

@@ -1,0 +1,119 @@
+.project-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 90px 0;
+  background: #0f121a;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: cyan;
+}
+
+/* Cards grid */
+.project-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  position: relative;
+  z-index: 5;
+}
+
+/* Card Styling */
+.project-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: left;
+  color: white;
+  transition: 0.4s;
+}
+
+/* Hover Glow Animation */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Text Colors */
+.role {
+  color: #43e9ff;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.tech {
+  opacity: 0.8;
+  font-size: 14px;
+}
+.desc {
+  margin-top: 8px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Button */
+.project-btn {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid cyan;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project-btn:hover {
+  background: cyan;
+  color: black;
+}
+
+/******** Jugnu Effect *********/
+.project-jugnu {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.firefly-p {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: radial-gradient(circle, cyan, transparent 60%);
+  border-radius: 50%;
+  filter: blur(1.5px);
+  animation: p-fly 7s infinite ease-out, p-glow 2s infinite alternate;
+  top: calc(var(--py) * 100%);
+  left: calc(var(--px) * 100%);
+}
+
+@keyframes p-glow {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.7);
+  }
+}
+@keyframes p-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(120px, -160px);
+  }
+  100% {
+    transform: translate(-100px, 180px);
+  }
+}
