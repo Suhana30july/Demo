@@ -14,7 +14,7 @@ function App() {
       {/* <Header></Header> */}
       <About></About>
       <Projects></Projects>
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
     </>
   );
 }
