@@ -96,6 +96,18 @@
   left: calc(var(--px) * 100%);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffb703;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 @keyframes p-glow {
   0% {
     opacity: 0.3;
